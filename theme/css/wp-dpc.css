@@ -17,6 +17,21 @@ main {
 	margin: auto;
 }
 
+.top-header {
+  background: #192e59;
+  color: #fff;
+}
+
+.top-header .btn-green {
+  background: #39b464;
+  border:1px solid #39b464;
+}
+
+.br-0 {
+  border-radius: 0;
+}
+
+
 .wp-caption {}
 .wp-caption-text {}
 .sticky {}
