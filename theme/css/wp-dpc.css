@@ -7,6 +7,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    font-family: 'Poppins', sans-serif;
 }
 main {
     flex: 1 0 auto;
@@ -22,10 +23,20 @@ main {
   color: #fff;
 }
 
-.top-header .btn-green {
+.btn-green {
   background: #39b464;
+  color: #fff;
   border:1px solid #39b464;
   padding: 10px 15px;
+}
+
+.btn-border-green {
+  background: #fff;
+  color: #333;
+  border: 1px solid #fff;
+  border-left:5px solid #39b464;
+  padding: 10px 15px;
+  font-size: 16px;
 }
 
 .header-info {
@@ -39,13 +50,60 @@ main {
 }
 
 .nav-link {
-  padding: 25px 0;
+  padding: 25px 0 20px 0;
+  font-weight: 600;
 }
+
+.navbar-light .navbar-nav .active >.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    border-bottom: 4px solid #39b464;
+    color: #39b464;
+}
+
 
 .br-0 {
   border-radius: 0;
 }
 
+.bg-white {
+  background-color: #fff!important;
+}
+
+.hero-carousel {
+  color: #fff;
+}
+
+.hero-subtile {
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.hero-title {
+  font-size: 72px;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 25px;
+}
+
+.hero-title::last-word {
+  font-weight: 900;
+}
+
+.hero-desc {
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  line-height: 34px;
+  margin-bottom: 30px;
+}
+
+
+
+.carousel-item {
+  padding: 140px 0;
+}
 
 .wp-caption {}
 .wp-caption-text {}
