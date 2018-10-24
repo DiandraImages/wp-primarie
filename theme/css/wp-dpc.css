@@ -25,6 +25,21 @@ main {
 .top-header .btn-green {
   background: #39b464;
   border:1px solid #39b464;
+  padding: 10px 15px;
+}
+
+.header-info {
+  padding: 10px 0;
+  display: block;
+  color: #9cb0d9;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.nav-link {
+  padding: 25px 0;
 }
 
 .br-0 {

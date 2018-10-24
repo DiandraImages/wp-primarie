@@ -18,13 +18,13 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-3 col-lg-3 col-xl-3">
-          contact@comunabarsau.ro
+          <span class="header-info email"><i class="far fa-envelope-open"></i> contact@comunabarsau.ro</span>
         </div>
         <div class="col-12 col-md-3 col-lg-3 col-xl-3">
-          +40 765 726 927 | 0260 421 612
+          <span class="header-info phone"><i class="fas fa-phone"></i> +40 765 726 927 | 0260 421 612</span>
         </div>
-        <div class="col-12 col-md-3 col-lg-3 col-xl-3 ml-auto">
-          <a href="#" class="btn btn-primary btn-green br-0">Programare Audiență</a>
+        <div class="col-12 col-md-3 col-lg-3 col-xl-6 d-flex justify-content-end">
+          <a href="#" class="btn btn-primary btn-green br-0 ml-auto">Programare Audiență</a>
         </div>
       </div>
     </div>
