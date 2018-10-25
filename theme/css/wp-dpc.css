@@ -99,37 +99,114 @@ main {
   margin-bottom: 30px;
 }
 
-.website-benefits-and-mayor-info {
+.tool-nav-img {
+    float: left;
+    margin-right: 10px;
+    width: 35px
+}
+
+.tool-nav-title {
+    font-size: 15px;
+    font-weight: 500;
+    color: #162647;
+}
+
+.tool-nav-desc {
+    display: block;
+    font-size: 14px;
+    font-weight: 200;
+    margin-bottom: 0;
+}
+
+.benefits-and-mayor-info {
   z-index: 2;
+  padding-bottom: 100px;
+}
+
+.tool-nav {
+    margin-top: -50px;
+    background: #fff;
+    border-radius: 5px 5px 0 0;
+    z-index: 2;
+    padding: 0 15px;
+}
+
+.tool-nav-link {
+   padding: 20px 15px;
+   color: #162647;
+}
+
+.tool-nav-link:hover {
+  text-decoration: none;
+  background: #f1f1f1;
   color: #162647;
 }
 
-.website-benefits-container {
-  background: #fff;
-  margin-top: -50px;
-  border-radius: 5px;
-  padding: 25px 15px;
+.tool-nav-link:first-child:hover {
+  border-radius: 5px 0 0 0;
 }
 
-.website-benefits-content-holder i {
-  font-size: 52px;
-  margin-right: 10px;
-  line-height: 1;
+.tool-nav-link:last-child:hover {
+  border-radius: 0 5px 0 0;
 }
 
-.website-benefits-content-holder h5 {
-  font-size: 17px;
-  margin-bottom: 3px;
+.about-major {
+    background-color: #121e37;
 }
 
-.website-benefits-content-holder p {
-  font-size: 14px;
-  margin-bottom: 0;
+.about-inner {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    padding-left: 10px;
+    padding-right: 30px;
+}
+.about-major-title {
+    font-size: 30px;
+    line-height: 1.6;
+    color: #fff;
+    padding-bottom: 25px;
+    font-weight: 500;
+}
+.about-major-title span {
+    display: block;
+    font-size: 15px;
+    font-weight: 200;
+}
+.about-major p {
+    color: #fff;
+    font-weight: 200;
 }
 
-.mayor-info {
-  background: #121e37;
-  color: #fff;
+.about-town {
+    padding-top: 55px;
+    padding-bottom: 55px;
+    background: url('../img/background-about-town.png') no-repeat center center;
+    background-size: cover;
+    height: auto;
+}
+.about-town-title {
+    font-size: 30px;
+    color: #fff;
+}
+.about-town-title strong {
+   font-family: 'Playfair Display', serif;
+    font-weight: 900;
+}
+.about-town-subtitle {
+    color: #4bb869;
+    font-weight: 500;
+    font-size: 30px;
+}
+.about-town-description {
+    color: #fff;
+    line-height: 2.0;
+    font-weight: 200;
+}
+
+.btn-success {
+    background-color: #45b268;
+    border-radius: none;
+    padding: 10px 20px;
 }
 
 .carousel-item {

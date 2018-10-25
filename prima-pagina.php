@@ -33,65 +33,58 @@
   </div>
 </section>
 
-<section class="website-benefits-and-mayor-info">
+<section class="benefits-and-mayor-info">
   <div class="container">
-    <div class="website-benefits-container">
-      <div class="row">
-        <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-          <div class="website-benefits-content-holder d-flex">
-            <i class="fas fa-file-invoice"></i>
-            <div class="d-flex align-content-center flex-wrap">
-              <h5>Plata Amenzi</h5>
-              <p>Plătește ameda electronic</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-          <div class="website-benefits-content-holder d-flex">
-            <i class="fas fa-file-invoice-dollar"></i>
-            <div class="d-flex align-content-center flex-wrap">
-              <h5>Plată taxe și impozite</h5>
-              <p>Plata impozitelor online</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-          <div class="website-benefits-content-holder d-flex">
-            <i class="fas fa-file-invoice-dollar"></i>
-            <div class="d-flex align-content-center flex-wrap">
-              <h5>Programează audiență</h5>
-              <p>Programează-ți audiența</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-          <div class="website-benefits-content-holder d-flex">
-            <i class="fas fa-file-invoice-dollar"></i>
-            <div class="d-flex align-content-center flex-wrap">
-              <h5>Formulare TIP</h5>
-              <p>Formuare în format editabil</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mayor-info">
-      <div class="row">
-        <div class="col-12 col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-          <img src="<?php echo get_template_directory_uri();?>/theme/img/mayor.jpg" alt="">
-        </div>
-        <div class="col-12 col-xs-12 col-sm-8 col-md-8 col-lg-8 col-xl-8">
-          <div class="mayor-info">
-            <h1>Traian Ciurdaș</h1>
-            <span>Primarul comunei Bârsău</span>
-            <p>În calitate de primar al comunei Bârsău de Sus, adresez un sincer bun venit tuturor celor ce aţi accesat acest site, în numele comunităţii acestei comune, administraţiei publice locale şi al meu personal.</p>
-            <p>Ne dorim ca pe această cale să venim în sprijinul cetăţenilor, oferindu-le dreptul la informaţia produsă şi gestionată de administraţia publică locală şi în acelaşi timp să fim o fereastră deschisă permanent tuturor celor ce vor să ne cunoască comuna şi pe noi.</p>
-            <a href="">Citește mai mult</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+       <div class="tool-nav">
+         <div class="row">
+           <?php if( have_rows('beneficii') ): ?>
+             <?php while( have_rows('beneficii') ): the_row(); ?>
+               <?php $imagine_beneficiu = get_sub_field('imagine'); ?>
+               <a class="col-12 col-sm-6 col-lg-3 col-xl-3 tool-nav-link" href="<?php echo get_sub_field('link_beneficiu');?>">
+                   <img class="img-fluid tool-nav-img" src="<?php echo $imagine_beneficiu['url']; ?>">
+                   <h5 class="tool-nav-title"><?php echo get_sub_field('titlu_beneficiu');?></h5>
+                   <p class="tool-nav-desc"><?php echo get_sub_field('descriere_beneficiu');?></p>
+               </a>
+             <?php endwhile; ?>
+           <?php endif; ?>
+         </div>
+       </div>
+       <?php if( have_rows('despre_primar') ): ?>
+         <?php while( have_rows('despre_primar') ): the_row(); ?>
+           <?php $imagine_primar = get_sub_field('imagine_primar'); ?>
+           <div class="about-major">
+               <div class="row">
+                   <div class="col-12 col-lg-5 col-xl-5">
+                       <img src="<?php echo $imagine_primar['url'];?>" class="img-fluid">
+                   </div>
+                   <div class="col-12 col-lg-7 col-xl-7">
+                       <div class="about-inner">
+                           <h4 class="about-major-title"><?php echo get_sub_field('nume_primar'); ?><span><?php echo get_sub_field('subtitlu_primar') ?></span></h4>
+                           <?php echo get_sub_field('descriere_primar'); ?>
+                           <a href="<?php echo get_sub_field('link_primar') ?>" class="btn btn-success">Citește mai mult</a>
+                       </div>
+                   </div>
+               </div>
+           </div>
+         <?php endwhile; ?>
+       <?php endif; ?>
+   </div>
+</section>
+
+<section class="about-town">
+   <div class="container">
+       <div class="row">
+           <div class="col-12 col-lg-5 col-xl-5">
+               <h3 class="about-town-title">Comuna <strong>Bârsău</strong></h3>
+               <p class="about-town-subtitle">Despre Comuna Noastră</p>
+           </div>
+           <div class="col-12 col-lg-7 col-xl-7">
+               <p class="about-town-description">Din punct de vedere geografic comuna Bârsău se află aşezată în partea de sud - est a judeţului Satu Mare, învecinându-se cu judeţul Maramureş, prin localităţile Fărcaşa şi Asuaju de Sus.</p>
+               <p class="about-town-description">Având în vedere coordonatele geografice, cele două sate: Bârsău de Sus şi Bârsău de Jos se află aşezate pe paralela de 47 de grade şi 60 de minute latitudine nordică, respectiv pe meridianul de 23 de grade, 22 minute, longitudine estică- Bârsău de Sus, şi 23 de grade şi 27 minute, longitudine estică- Bârsău de Jos.</p>
+               <p class="about-town-description">În cele ce urmează sunt reproduse elemente din monografia realizată recent de Prof. Augustin Jurje. „Situată sub poalele Munţilor Codrului, la marginea sud-estică judeţului Satu Mare, în interiorul unui semicerc de culmi deschis către răsărit, comuna Bârsău este alcătuită din două sate: Bârsău de Jos şi Bârsău de Sus. Privind configuraţia localităţilor dinspre Codru (Apus), de pe Dealul Bârsăului, cuprinzi cu vederea între culmi un relief neregulat, fragmentat de acţiuni geologice anterioare, relief brăzdat de o depresiune mai mare aşezată pe lângă Valea Bârsăului. </p>
+           </div>
+       </div>
+   </div>
 </section>
 
 
