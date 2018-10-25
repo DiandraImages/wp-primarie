@@ -50,8 +50,8 @@ main {
 }
 
 .nav-link {
-  padding: 25px 0 20px 0;
-  font-weight: 600;
+  padding: 35px 0 30px 0;
+  font-weight: 500;
 }
 
 .navbar-light .navbar-nav .active >.nav-link,
@@ -99,7 +99,38 @@ main {
   margin-bottom: 30px;
 }
 
+.website-benefits-and-mayor-info {
+  z-index: 2;
+  color: #162647;
+}
 
+.website-benefits-container {
+  background: #fff;
+  margin-top: -50px;
+  border-radius: 5px;
+  padding: 25px 15px;
+}
+
+.website-benefits-content-holder i {
+  font-size: 52px;
+  margin-right: 10px;
+  line-height: 1;
+}
+
+.website-benefits-content-holder h5 {
+  font-size: 17px;
+  margin-bottom: 3px;
+}
+
+.website-benefits-content-holder p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.mayor-info {
+  background: #121e37;
+  color: #fff;
+}
 
 .carousel-item {
   padding: 140px 0;
