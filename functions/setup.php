@@ -86,3 +86,11 @@ if ( ! function_exists('b4st_excerpt_more') ) {
 	}
 }
 add_filter('excerpt_more', 'b4st_excerpt_more');
+
+add_filter( 'body_class', 'plata_amenzi_body_class');
+function plata_amenzi_body_class( $classes ) {
+     if ( is_page(79) )
+          $classes[] = 'page-plata-amenzi';
+
+     return $classes;
+}

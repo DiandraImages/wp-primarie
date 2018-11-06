@@ -87,5 +87,65 @@
    </div>
 </section>
 
+<section class="content-row last-posts">
+  <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <h1 class="article-main-title">Ultimele Știri</h1>
+              <p class="article-sub-title">Lorem ipsum dolor asit amet</p>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12 col-lg-6">
+              <div class="featured-article">
+                  <a href="#">
+                      <img src="<?php echo get_template_directory_uri(); ?>/theme/img/barasau-biserica.png" alt="" class="thumb">
+                  </a>
+                  <div class="block-title">
+                      <p class="by-author"><small>June 6,2018</small> / <small>Noutati</small></p>
+                      <h2>Lorem ipsum dolor asit amet</h2>
+                      <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-12 col-lg-6">
+              <ul class="media-list main-list">
+                  <li class="media">
+                      <a class="" href="#">
+                          <img class="media-object" src="<?php echo get_template_directory_uri(); ?>/theme/img/barasau-biserica.png" alt="...">
+                      </a>
+                      <div class="media-body">
+                          <p class="by-author"><small>June 6,2018</small> / <small>Noutati</small></p>
+                          <h4 class="media-heading">Lorem ipsum dolor asit amet</h4>
+                          <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <a href="#">Citeste mai mult</a></p>
+                      </div>
+                  </li>
+                  <li class="media">
+                      <a class="pull-left" href="#">
+                          <img class="media-object" src="<?php echo get_template_directory_uri(); ?>/theme/img/barasau-biserica.png" alt="...">
+                      </a>
+                      <div class="media-body">
+                          <p class="by-author"><small>June 6,2018</small> / <small>Noutati</small></p>
+                          <h4 class="media-heading">Lorem ipsum dolor asit amet</h4>
+                          <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <a href="#">Citeste mai mult</a></p>
+                      </div>
+                  </li>
+                  <li class="media">
+                      <a class="pull-left" href="#">
+                          <img class="media-object" src="<?php echo get_template_directory_uri(); ?>/theme/img/barasau-biserica.png" alt="...">
+                      </a>
+                      <div class="media-body">
+                          <p class="by-author"><small>June 6,2018</small> / <small>Noutati</small></p>
+                          <h4 class="media-heading">Lorem ipsum dolor asit amet</h4>
+                          <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <a href="#">Citeste mai mult</a></p>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</section>
+
+
 
 <?php get_footer(); ?>

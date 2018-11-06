@@ -26,4 +26,11 @@
 
 	});
 
+	$("#lastNameBold").html(function(){
+	  var text= $(this).text().trim().split(" ");
+	  var last = text.pop();
+	  return text.join(" ") + (text.length > 0 ? " <span class='lastNameBolded'>" + last + "</span>" : last);
+	});
+
+
 }(jQuery));
